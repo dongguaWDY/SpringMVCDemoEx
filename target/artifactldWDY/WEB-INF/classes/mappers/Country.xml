@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.donggua.webpackage.countrydao.CountryDao">
+
+    <resultMap id="countries" type="Country">
+        <result property="country" column="country"/>
+    </resultMap>
+
+    <select id="selectCountryByID" parameterType="int" resultType="Country">
+        select country_id,country from country where country_id=#{id}
+    </select>
+
+    <insert id="insertCountry" parameterType="Country">
+        insert into country (country) values(#{country});
+    </insert>
+
+    <select id="selectAllCountriesAndReturnHashMap" resultMap="countries">
+        select country from country;
+    </select>
+</mapper>
