@@ -10,8 +10,8 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 /**
  * Created by 冬瓜WDY on 2017/7/14.
  */
-//@Configuration
-//@EnableWebMvcSecurity
+@Configuration
+@EnableWebMvcSecurity
 public class ConfClassForMvcSecurity extends WebSecurityConfigurerAdapter{
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
@@ -29,13 +29,13 @@ public class ConfClassForMvcSecurity extends WebSecurityConfigurerAdapter{
 //        org.springframework.security.core.context.SecurityContext
 //        org.springframework.security.core.context.SecurityContextHolder
 //        org.springframework.security.core.userdetails.UserDetails
-        http
-                .sessionManagement()
-                .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+//        http
+//                .sessionManagement()
+//                .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 
         http
                 .authorizeRequests()
-                .antMatchers("/helloworld").hasRole("ADMIN")
+//                .antMatchers("/helloworld").hasRole("ADMIN")
                 .anyRequest().authenticated()
                 .and()
                 .formLogin();

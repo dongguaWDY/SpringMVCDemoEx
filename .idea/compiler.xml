@@ -22,11 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="thisisProjectNameWDY" />
+        <module name="artifactldWDY" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="thisisProjectNameWDY" target="1.5" />
+      <module name="artifactldWDY" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

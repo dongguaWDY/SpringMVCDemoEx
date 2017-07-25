@@ -4,6 +4,10 @@ package com.donggua.webpackage;
 import com.donggua.webpackage.countrydao.CountryDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.web.access.intercept.FilterSecurityInterceptor;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter;
+import org.springframework.security.web.session.SessionManagementFilter;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
@@ -31,6 +35,12 @@ public class HelloWorld {
 
     @Autowired
     CountryDao countryDao;
+
+//    RememberMeAuthenticationFilter
+//SessionManagementFilter
+//    UsernamePasswordAuthenticationFilter
+
+//    FilterSecurityInterceptor
 
 
 //DispatcherServlet
