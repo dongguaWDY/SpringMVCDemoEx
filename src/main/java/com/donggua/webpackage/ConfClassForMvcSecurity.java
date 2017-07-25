@@ -41,7 +41,7 @@ public class ConfClassForMvcSecurity extends WebSecurityConfigurerAdapter{
                 .formLogin();
 //                .and()
 //                .httpBasic();
-        http.rememberMe().tokenValiditySeconds(30);
+        http.rememberMe().tokenValiditySeconds(300000000);
 
 //        http.httpBasic();
 //        http.httpBasic().and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
