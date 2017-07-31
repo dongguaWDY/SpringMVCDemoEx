@@ -16,6 +16,7 @@ import org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping;
 import org.springframework.web.servlet.mvc.method.RequestMappingInfo;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
 
+import javax.servlet.http.HttpSession;
 import java.io.Serializable;
 import java.util.*;
 
@@ -42,7 +43,8 @@ public class HelloWorld {
 
 //    FilterSecurityInterceptor
 
-
+//    HttpSession
+//ThreadLocal
 //DispatcherServlet
 //    RequestMappingHandlerMapping
 //BeanNameUrlHandlerMapping
